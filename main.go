@@ -39,6 +39,8 @@ func main() {
 		v2()
 	case "v3":
 		v3()
+	case "v4":
+		v4()
 	}
 
 	if err := pprof.WriteHeapProfile(mem); err != nil {
