@@ -7,12 +7,12 @@ import (
 	"time"
 )
 
-const million = 1000000
+const numberOfRows = 100000
 
 func v3() {
-	rows := make([]v2row, 0, million)
+	rows := make([]v2row, 0, numberOfRows)
 	fmt.Println("inserting rows")
-	for i := 0; i < million; i++ {
+	for i := 0; i < numberOfRows; i++ {
 		id := uuid.New()
 		rows = append(rows, v2row{
 			key:       &id,

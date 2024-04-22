@@ -1,0 +1,10 @@
+Showing nodes accounting for -8.20MB, 36.59% of 22.41MB total
+      flat  flat%   sum%        cum   cum%
+  -18.75MB 83.68% 83.68%   -21.25MB 94.84%  main.v1
+   13.05MB 58.25% 25.43%    13.05MB 58.25%  main.v2
+   -1.50MB  6.69% 32.12%    -1.50MB  6.69%  github.com/google/uuid.NewRandomFromReader
+      -1MB  4.46% 36.59%       -1MB  4.46%  github.com/google/uuid.UUID.String (inline)
+         0     0% 36.59%    -1.50MB  6.69%  github.com/google/uuid.New (inline)
+         0     0% 36.59%    -1.50MB  6.69%  github.com/google/uuid.NewRandom
+         0     0% 36.59%    -8.20MB 36.59%  main.main
+         0     0% 36.59%    -8.20MB 36.59%  runtime.main

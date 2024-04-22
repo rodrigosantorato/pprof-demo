@@ -17,7 +17,7 @@ type v2row struct {
 func v2() {
 	var rows []v2row
 	fmt.Println("inserting rows")
-	for i := 0; i < 1000000; i++ {
+	for i := 0; i < numberOfRows; i++ {
 		id := uuid.New()
 		rows = append(rows, v2row{
 			key:       &id,

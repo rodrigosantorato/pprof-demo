@@ -15,7 +15,6 @@ type row struct {
 	createdAt time.Time
 }
 
-// TODO write tests and test each version equally
 func main() {
 	if len(os.Args) < 2 {
 		panic("please choose version to run i.e. 'go run . v1'")
@@ -41,7 +40,7 @@ func main() {
 		v3()
 	}
 
-	if err := pprof.WriteHeapProfile(mem); err != nil {
+	if err := pprof.Lookup("allocs").WriteTo(mem, 0); err != nil {
 		panic(err)
 	}
 }

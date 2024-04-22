@@ -10,7 +10,7 @@ import (
 func v1() {
 	var rows []row
 	fmt.Println("inserting rows")
-	for i := 0; i < 1000000; i++ {
+	for i := 0; i < numberOfRows; i++ {
 		rows = append(rows, row{
 			key:       uuid.New().String(),
 			val:       rand.Int(),
