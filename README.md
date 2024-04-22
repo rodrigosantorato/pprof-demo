@@ -1,6 +1,6 @@
 # Cheat Sheet
 
-## Run the program chossing a version
+## Run the program choosing a version
 ```
 go run . v1
 go run . v2
